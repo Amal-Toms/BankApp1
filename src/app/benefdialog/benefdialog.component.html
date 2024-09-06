@@ -1,0 +1,46 @@
+
+<!-- Label to display any error messages -->
+<label class="error-message">{{ errMessage }}</label>
+
+<section class="clsdialog">
+  
+      <span class="clstit">TRANSACTIONS</span>
+
+      <span>To</span>
+  
+      <mat-form-field> 
+       <input [(ngModel)]="benefobj.Name" name="editname" matInput placeholder="A/C Holder Name" type="text" disabled>
+      </mat-form-field>
+
+      <mat-form-field>
+       <input [(ngModel)]="benefobj.Accno" name="editnum" matInput placeholder="Account Number" type ="number" disabled>
+      </mat-form-field>
+
+      <mat-form-field> 
+        <input [(ngModel)]="benefobj.IFSC" name="editifsc" matInput placeholder="IFSC Code" type="text" disabled>
+      </mat-form-field>
+
+      <span>FROM</span>
+           
+      <mat-form-field>
+        <input [(ngModel)]="beneftransactions.Accno" name="edittonum" matInput placeholder="Enter Account Number" type ="text" required>
+      </mat-form-field>
+      <mat-form-field> 
+        <input [(ngModel)]="beneftransactions.frombank" name="edittobank" matInput placeholder="Enter Bank" type="text" required>
+      </mat-form-field>
+
+      <mat-form-field> 
+        <input [(ngModel)]="beneftransactions.fromIFSC" name="edittoifsc" matInput placeholder="Enter IFSC Code" type="text" required>
+      </mat-form-field>
+
+      <mat-form-field> 
+        <input [(ngModel)]="beneftransactions.amount" name="editamt" matInput placeholder="Enter Amount" type="number" required>
+      </mat-form-field>
+
+      <div class="clsbutton">
+        <button (click) ="callsubmit()" mat-raised-button color ="primary">Submit</button>
+        <button (click) = "callcancel()" mat-raised-button color = "primary">Cancel</button>
+      </div>
+ 
+  
+</section>

@@ -1,0 +1,18 @@
+<section class="oldbg">
+    <div class="main-block">
+      <h1>BANK ACCOUNT DETAILS</h1>
+      <form action="/">
+        <hr>
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input type="text" name="name" id="name" placeholder="Enter Account Number" [(ngModel)]="custobj" required/>
+        
+        <hr>
+        <hr>
+        <div class="btn-block">
+          <button (click)="submit()">SUBMIT</button>
+          <a href="/banktaker" class="main-filled-button" >BACK</a>
+        </div>
+      </form>
+    </div>
+  </section>

@@ -1,0 +1,14 @@
+.clsview
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 30px;
+
+
+}
+.banke
+{
+    background-image: url(/assets/images/mybg.jfif);
+}

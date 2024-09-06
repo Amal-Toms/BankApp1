@@ -1,0 +1,116 @@
+
+button:hover
+{
+  background-color: rgb(23, 17, 116);
+}
+button
+{
+    background-color: rgb(238, 231, 233);
+    color: rgb(245, 238, 238);
+}
+.clsmat
+{
+  background-image: url(/assets/images/card.jfif);
+  width: 100%;
+  margin: 2em;
+  height: 100%;
+  background-size: cover;
+  background-position-y: -20vh;
+  padding-right: 100px;
+}
+a{
+  height: 5px;
+}
+.clscard
+{
+  height:75%;
+  width: 120%;
+  justify-content: space-between;
+  margin-right: 5%;
+
+}
+.cardbutt
+{
+  text-align: right;
+
+}
+.myone
+{
+  color: rgb(253, 253, 253);
+}
+
+p
+{
+  color: rgb(216, 203, 25);
+  text-align: left;
+}
+.bn54 {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 80px;
+  width:80px;
+  opacity: 1;
+  background-color: #dd1414;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.bn54 .bn54span {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #f1f1f5;
+  font-size: 8px;
+  font-weight: 1500;
+  letter-spacing: 0.7px;
+}
+
+.bn54:hover {
+  animation: bn54rotate 0.7s ease-in-out both;
+}
+
+.bn54:hover .bn54span {
+  animation: bn54storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes bn54rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bn54storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+

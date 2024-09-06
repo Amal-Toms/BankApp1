@@ -1,0 +1,19 @@
+.clsdialog
+{
+   display: flex;
+   flex-direction: column;
+   width: 250px;
+}
+.clsbutton
+{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+}
+.clstit{
+    text-align: center;
+    font-size: x-large;
+    font: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

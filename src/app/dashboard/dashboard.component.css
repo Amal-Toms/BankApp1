@@ -1,0 +1,10 @@
+.clsnull
+{
+    font-size: x-small;
+}
+.clscard
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}

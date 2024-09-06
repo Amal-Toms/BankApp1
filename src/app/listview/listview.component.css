@@ -1,0 +1,151 @@
+.mat-card-header{
+    color: rgb(19, 8, 8);
+    padding:5px !important;
+  }
+  .mat-card{
+    background-image: linear-gradient(to bottom right, rgb(221, 220, 236), rgb(74, 71, 90));
+    width: 100%;
+    height: 20vh;
+    
+  }
+  .clscard
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: stretch;
+    padding-bottom: 10px;
+  
+  
+   
+    
+  }
+  label {
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(27, 27, 233);
+    padding: 5px;
+    padding-top: 5px;
+  }
+  .clsother
+  {
+    background-image: url(/assets/images/card.jfif);
+  }
+  .sbilist
+  {background-image: linear-gradient(90deg, #080708, #6f6fc9);
+    width: 100%;
+  
+    
+  
+  
+  }
+  .sbitext
+  {
+    color: aliceblue;
+  }
+  .hdfclist
+  {
+    background-image: linear-gradient(90deg, #080708, #6f6fc9);
+  }
+  .clscard1
+  {
+    height: 30vh;
+  }
+  .hdfctext
+  {
+    color: aliceblue;
+  }
+  .othertext
+  {
+    color: aliceblue;
+  }
+  .icicitext
+  {
+    color: aliceblue;
+  }
+  .icicilist
+  {
+    background-image: linear-gradient(90deg, #080708, #6f6fc9);
+  }
+  .otherlist
+  {
+    background-image: linear-gradient(90deg, #080708, #6f6fc9);
+  }
+  .cardbutt
+  {
+    text-align: center;
+  }
+  .bn54 {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 80px;
+    width:80px;
+    opacity: 1;
+    background-color: #e61122;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+  }
+  
+  .bn54 .bn54span {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f1f1f5;
+    font-size: 8px;
+    font-weight: 1500;
+    letter-spacing: 0.7px;
+  }
+  
+  .bn54:hover {
+    animation: bn54rotate 0.7s ease-in-out both;
+  }
+  
+  .bn54:hover .bn54span {
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes bn54rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes bn54storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  p
+  {
+    color: aquamarine;
+  }

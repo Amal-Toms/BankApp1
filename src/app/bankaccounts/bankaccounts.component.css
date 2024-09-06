@@ -1,0 +1,76 @@
+.clsview
+{
+    padding-top: 150px;
+}
+
+
+    
+.last
+{
+    background: linear-gradient(to bottom, #0f0c29, #302b63,#0f0c29);
+    color: aliceblue;
+}
+.logo
+{
+    color: aliceblue;
+}
+.clscd
+{
+  background-image: url(/assets/images/card.jfif);
+  width: 25%;
+  margin: 2em;
+  height: 100%;
+  background-size: cover;
+  background-position-y: -20vh;
+  padding-right: 100px;
+  color: aliceblue;
+  margin: auto;
+  margin-top: 5%;
+  margin-right: 5%;
+  
+}
+.cumu
+{
+    text-align: center;
+}
+
+title
+{
+    text-align: center;
+}
+.acc
+{
+    color: azure;
+}
+.one
+{
+    color: blueviolet;
+}
+p
+{
+    color: blueviolet;
+    font-size: 120%;
+}
+.clsmat
+{
+    background-color: aliceblue;
+    width: 20%;
+    margin: auto;
+}
+button
+{
+    width: 8%;
+    text-align: left;
+}
+.clscard
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.clscd {
+    color : black;
+}

@@ -1,0 +1,55 @@
+<div>
+  <form>
+    
+    <div class="form-row clsfrm">
+      <div class="form-group col-md-2">
+        <!--<label for="inputEmail4">From A/C No</label>-->
+        <input [(ngModel)] = "bank.Accno" name ="faacno" type="number" class="form-control" id="inputEmail4" placeholder="From Account Number" required>
+      </div>
+      <div class="form-group col-md-2">
+        <!--<label for="inputPassword4">From Bank</label>-->
+        <input [(ngModel)] = "bank.Bank" name ="fbank" type="text" class="form-control" id="inputPassword4" placeholder="From Bank" required>
+      </div>
+      <div class="form-group col-md-2">
+        <!--<label for="inputIFSC">From IFSC</label>-->
+        <input [(ngModel)] = "bank.IFSC" name ="fifsc" type="text" class="form-control" id="inputIFSC" placeholder="From IFSC" required>
+      </div>
+      <!--<div>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Transaction Type</option>
+          <option value="1">My Account</option>
+          <option value="2">My Beneficiary</option>
+          
+        </select>
+      </div>-->
+    </div>
+    
+   
+    <div class="form-row clsfrm">
+
+      
+      <div class="form-group col-md-2">
+        <!--<label for="inputEil4">To A/C No</label>-->
+        <input [(ngModel)] = "transobj.Accno" name ="taccno" type="number" class="form-control" id="inputEil4" placeholder="To Account Number" required>
+      </div>
+      <div class="form-group col-md-2">
+        <!--<label for="inputPas">To Bank</label>-->
+        <input [(ngModel)] = "transobj.tobank" name ="tbank" type="text" class="form-control" id="inputPas" placeholder="To Bank" required>
+      </div>
+      <div class="form-group col-md-2">
+        <!--<label for="inIFSC">To IFSC</label>-->
+        <input [(ngModel)] = "transobj.toIFSC" name ="tifsc" type="text" class="form-control" id="inIFSC" placeholder="To IFSC" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <!--<label for="inputCity">Transaction Amount</label>-->
+          <input [(ngModel)] = "transobj.amount" name ="tamt" type="number" class="form-control" id="inputCity" placeholder="Amount" required>
+        </div>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" (click)="callsub()">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="callcancel()">Cancel</button>
+  </form>
+  
+</div>

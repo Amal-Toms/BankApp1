@@ -1,0 +1,35 @@
+<section class="whole">
+    <div class="naaa">
+        <div class="main">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true"> Register New Beneficiary</label>
+              <a href="/maindashboard" id="hi" class="main-filled-button" >Back to Main Dashboard</a>
+              <input matInput placeholder="Name" name ="name" [(ngModel)]="benefobj.Name">
+                        <input matInput placeholder="Bank" name ="Bank" [(ngModel)]="benefobj.Bank">
+              <input matInput placeholder="Account Number" name ="Account Number" [(ngModel)]="benefobj.Accno">
+              <input matInput placeholder="IFSC" name ="IFSC" [(ngModel)]="benefobj.IFSC">
+              <input matInput placeholder="Mobile number" name ="bmob" [(ngModel)]="benefobj.Mob">
+              <input matInput placeholder="Your Username" name ="uname" [(ngModel)]="benefobj.User">
+                        
+                        <button mat-button (click)="addbenefi()">Add Beneficiary</button>
+              <!-- <button mat-button (click)="transbenef()">View All Beneficiaries</button>  -->
+              <!-- <button mat-button (click)="transbenef()">Beneficiary Transactions</button> -->
+              
+              
+         
+              
+                    </form>
+            
+      
+    
+                </div>
+    
+        
+        </div>
+    
+      
+    </div>
+    </section>

@@ -1,0 +1,36 @@
+<div class="clscard">
+    <mat-card class="clsmat">
+  
+  <mat-card-header>
+    <mat-card-title class="myone">{{customer.Bank}} - {{customer.Acctype}}</mat-card-title>
+  
+  </mat-card-header>
+  <mat-card-content align="bottom" class="myone1">
+    <p>
+      Account Number: {{customer.Accno}}
+    </p>
+    <p>
+      
+      Balance: {{customer.Balance}}
+  
+    </p>
+    <p>
+      
+      IFSC: {{customer.IFSC}}
+  
+    </p>
+  </mat-card-content>
+  <div class="cardbutt">
+    <a>
+      <button class="bn54">
+        <span class="bn54span" (click)="transaction()">Transaction</span>
+      </button>
+    </a>
+     
+  </div>
+  
+    </mat-card>
+    
+  </div>
+  
+  

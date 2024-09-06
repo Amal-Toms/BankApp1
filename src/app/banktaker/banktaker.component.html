@@ -1,0 +1,91 @@
+<section class="addacc">
+  <label class="error-message">{{ errMessage }}</label>
+  <div class="butview">
+    <a href="/maindashboard" class="main-filled-button" >Back to Main Dashboard</a>
+    
+  </div>
+<!-- Expansion panel to add new notes -->
+<div class="page">
+  <mat-expansion-panel class="myexp">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="clstitle">
+        
+        <strong>Add Account</strong> 
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="clsin">
+      
+    <mat-form-field class="mat-input">
+      <label class="field field_v1">
+       
+      <input  class="field__input" matInput placeholder="Enter your name" name ="name" [(ngModel)]="custobj.Name">
+    
+  </label>
+    </mat-form-field>
+    <mat-form-field class="mat-input">
+      <label class="field field_v1">
+        
+      <input class="field__input" matInput placeholder="Bank" name ="Bank" [(ngModel)]="custobj.Bank">
+    
+  </label>
+    </mat-form-field>
+    <mat-form-field class="mat-input">
+      <label class="field field_v1">
+       
+      <input  class="field__input" matInput placeholder="AccountNumber" name ="AccountNumber" [(ngModel)]="custobj.Accno">
+   
+  </label>
+    </mat-form-field>
+
+      <mat-form-field class="mat-input">
+        <label class="field field_v1">
+          
+        <input  class="field__input" matInput placeholder="IFSC" name ="IFSC" [(ngModel)]="custobj.IFSC">
+      
+    </label>
+      </mat-form-field>
+      <mat-form-field class="mat-input">
+        <label class="field field_v1">
+          <input  matInput placeholder="Branch" name ="Branch" [(ngModel)]="custobj.Branch">
+      
+    </label>
+      </mat-form-field>
+      <mat-form-field class="mat-input">
+        <label class="field field_v1">
+      
+        <input  class="field__input"matInput placeholder="Account Type" name ="AccountType" [(ngModel)]="custobj.Acctype">
+
+    </label>
+      </mat-form-field>
+      <mat-form-field class="mat-input">
+        <label class="field field_v1">
+      
+        <input  class="field__input"matInput placeholder="Balance" name ="Balance" [(ngModel)]="custobj.Balance">
+
+    </label>
+      </mat-form-field>
+      <mat-form-field class="mat-input">
+        <label class="field field_v1">
+      
+        <input  class="field__input"matInput placeholder="Login Username" name ="UIC" [(ngModel)]="custobj.UIC">
+
+    </label>
+      </mat-form-field>
+    <div class="mat-input">
+      <button mat-button (click)="Add()" mat-raised-button color ="primary">Add</button>
+    </div>
+  </div>
+  </mat-expansion-panel>
+</div>
+
+<section class="lastpart">
+<div class="keep-c-toggle-view">
+  
+  <h2><strong>Account Card</strong></h2>
+     
+     <p><strong>View</strong></p>
+    <i *ngIf="isNoteView" class="material-icons switchToListView " (click)="changeView()">view_list</i>
+    <i *ngIf="!isNoteView" class="material-icons switchToNoteView" (click)="changeView()">view_quilt</i>
+
+</div>
+</section>

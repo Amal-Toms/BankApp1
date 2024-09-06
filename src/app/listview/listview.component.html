@@ -1,0 +1,87 @@
+<div class="clscard">
+	<label>SBI</label>
+
+	<!-- Populate sbi bank accounts-->
+  <div class="clscard1" *ngFor="let cust of sbi">
+    <mat-card class="sbilist">
+
+      <mat-card-header>
+        <mat-card-title class="sbitext">{{cust.Bank}} - {{cust.Acctype}} Account</mat-card-title>
+
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{cust.Name}}
+        </p>
+      </mat-card-content>
+     
+        </mat-card>
+  </div>
+</div>
+<div class="clscard">
+	<label>HDFC</label>
+
+	<!-- Populate hdfc bank accounts -->
+
+  <div class="clscard1" *ngFor="let cust of hdfc">
+    <mat-card class="hdfclist">
+
+      <mat-card-header>
+        <mat-card-title class="hdfctext">{{cust.Bank}} - {{cust.Acctype}} Account</mat-card-title>
+
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{cust.Name}}
+        </p>
+
+
+      </mat-card-content>
+      
+        </mat-card>
+  </div>
+</div>
+<div class="clscard">
+	<label>ICICI</label>
+
+	<!-- Populate icici bank accounts -->
+  <div class="clscard1" *ngFor="let cust of icici">
+    <mat-card class="icicilist">
+
+      <mat-card-header>
+        <mat-card-title class="icicitext">{{cust.Bank}} - {{cust.Acctype}} Account</mat-card-title>
+
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{cust.Name}}
+        </p>
+
+      </mat-card-content>
+      
+        </mat-card>
+  </div>
+</div>
+<div class="clscard">
+
+  <label>others</label>
+
+<!-- Populate otherbank accounts -->
+<div class="clscard1" *ngFor="let cust of others">
+  <mat-card class="otherlist">
+
+    <mat-card-header>
+      <mat-card-title class="othertext">{{cust.Bank}} - {{cust.Acctype}} Account</mat-card-title>
+
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{cust.Name}}
+      </p>
+
+    </mat-card-content>
+    
+    
+      </mat-card>
+</div>
+</div>

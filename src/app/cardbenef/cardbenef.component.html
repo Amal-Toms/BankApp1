@@ -1,0 +1,22 @@
+<div class="clscard">
+    <mat-card class="clsmat">
+      <mat-card-header>
+        <mat-card-title class="myone"><p>{{beneficiary.Name}} - {{beneficiary.Bank}}</p></mat-card-title>
+        <mat-card-subtitle class="myone"><p>A/C No : {{beneficiary.Accno}}</p></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content align="bottom" class="myone1">
+        <ul>
+          <li>IFSC : {{beneficiary.IFSC}}</li>
+          <li>Mobile No : {{beneficiary.Mob}}</li>
+        </ul>
+      </mat-card-content>
+      <div class="cardbutt">
+        <a>
+          <button class="bn54">
+            <span class="bn54span" (click)="beneftransaction()">Transaction</span>
+          </button>
+        </a>
+         
+      </div>
+    </mat-card>
+  </div>
